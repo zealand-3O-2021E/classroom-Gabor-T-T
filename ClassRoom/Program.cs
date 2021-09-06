@@ -31,6 +31,9 @@ namespace ClassRoom
             c1.ClassList.Add(s4);
 
 
+            Console.WriteLine($"The class name is: {c1.ClassName} and the semester started at: {c1.Semester}");
+
+
 
 
 
