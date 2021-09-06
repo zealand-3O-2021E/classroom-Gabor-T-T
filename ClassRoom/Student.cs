@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.SymbolStore;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -35,6 +36,35 @@ namespace ClassRoom
         {
             get { return _birthday; }
             set { value = _birthday; }
+        }
+
+
+
+        public static void Season( int birthMonth)
+        {
+            
+            if (birthMonth==1 || birthMonth== 2 || birthMonth== 12)
+            {
+                Console.WriteLine($"winter");
+                
+                if (birthMonth>3 && birthMonth<5)
+                {
+                    Console.WriteLine($"spring");
+
+                    if (birthMonth>6 && birthMonth<8)
+                    {
+                        Console.WriteLine($"Summer");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Autumn");
+                    }
+                }
+
+                
+                
+            }
+            
         }
 
     }

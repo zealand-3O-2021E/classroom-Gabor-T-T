@@ -33,6 +33,9 @@ namespace ClassRoom
 
             Console.WriteLine($"The class name is: {c1.ClassName} and the semester started at: {c1.Semester}");
 
+           Student.Season();
+            
+            Console.ReadKey();
 
 
 
